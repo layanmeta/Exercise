@@ -1,0 +1,114 @@
+1. .מה ההבדל בין מחלקה לבין אובייקט 
+object is something (a case)  of class. Class is the meaning of the Object 
+
+ 2. ירושה היא בעצם הכלה. הסבר מדוע
+inheritance  (ירושה ) lets us create new classes that we can use more than once and change. 
+It is easier to change in one class rather than keep changing over and over, as we can give info 
+to specific stuff in each class, that follow the base one.
+3 תן דוגמא לשתי מחלקות אשר האחת יורשת מהשנייה . הסבר מה היתרון שקיבלנו כאשר השתמשנו
+בירושה
+
+For example - Electronics is the base, then we have mobile. This way we specified which electornics we are talking about
+which is mobile, and it has its own informations.lets say in the electronics class we had type, size, itsUse
+in mobile we'd have something that only mobile has.
+
+4.שולחן יורש מכיסא מכיוון ששניהם רהיטים". הסבר מדוע המשפט הזה אינו נכון" 
+its wrong because the table and the chair both take from furniture.Table cant take from chair, the base is furniture
+
+5. .מדוע כדאי להוסיף קו תחתון )_( לפני שמות של שדות מידע ?
+So its easyer to know its an information. If we had 2 things named the same, having _ will help us know that
+this one is an information. Will also show us all the informations we can use when writing _.
+
+
+6. . מדוע נשתמש בו(constructor ) מהו בנאי  ?
+
+constructor  are methods which will call when we apply a class. It will have same name as class and will give
+a default value or a value we write in it.
+
+7.? default constructor  מהו. 
+
+default constructor is a constructor that is created automatically if there was non in the class, or a constructor
+with no values/parameters
+
+8 .מה ההבדל בין בנאי המקבל פרמטרים, לבין initializer object ?
+........
+
+9 .מה משמעות המושג overloading ? מה משמעות המושג overloading constructor ?
+
+overloading means it has the ability 1 identifier to define multiple methods from a class. Basically means that 
+overloading is when you use the same thing more than once, when its not even needed
+Constructor overloading is having more than 1 constructor with different values/ parameters which means each one
+when is active, gives different values.
+
+10 .מה עושה פונק ציית ToString ? מתי נשתמש בה? 
+
+it convers objects to string, so we can use them in the main program and so they return a value, instead of calling
+the name of the program itself when we run it
+
+11. מה משמעות override הכתוב בחתימה של הפונקציה ? 
+
+override means it follows its own method, and not base
+
+12 .אם לא נכתוב מימוש משל עצמנו ל - ToString ,מה יקרה כשנדפיס את האובייקט ?
+
+When we run the program it will only mention the name of the program. Without ToString we wont have 
+ other values showing.
+13. מה משמעות המילה abstract ? מתי כדאי לתכנן מחלקה אבסטרקטית ? תן דוגמא
+
+abstract is when we have more than 1 class, and we want one to be the base, the main (the father of the other classes)
+it is used to only show functions that other classes can use and give it info. Its used when we have 
+more than 1 class that follow the main one, and each one has its own info in functions, so we use base
+in the main class with no info so the others can override and have their own info in those funcinos
+
+14. מה ההבדל בין פונקציה אבסטרקטית לפונקציה רגילה ? 
+
+abstract methods cant have info in them or a code
+normal methods can override and have info in them
+
+15. .כאשר יצרנו פונקציה אבסטרקטית בתוך מחלקה, מה ההשלכות ?
+
+......................
+
+16.האם מחלקה אבסטרקטית יכולה להכיל הפונקציות לא אבסטרקטיות ?  
+yes
+
+17. האם מחלקה רג ילה )לא- אבסטרקטית( יכולה להכיל פונקציות אבסטרקטיות ?
+
+
+no
+
+18.  .האם ניתן לייצר מופע ממחלקה אבסטרקטית ?
+
+no,becuase its not complete 
+
+19. 
+
+20.  .מה משמעות המילה base בצירוף של פונקציה אחריה? מתי חובה להשתמש במילה זו ?
+
+base is used when we want to access the main class from another class
+
+we add base when we have a main class, and we have another class that takes from the main class, so class2 : class 1
+
+21. מתי כדאי להשתמש ב - ToString.base ? מה נרוויח מכך ?
+
+you use it when you are in another class that follow the base one, and do ToString to its own info and add ToString.Base
+this way you dont have to write everything from the main class again, you can just write ToString.Base and it adds everything
+
+
+22. מה משמעות ה- '+' ב- UML?
+
+it means its public 
+
+23. כיצד מציינים ירושה ב- UML ?
+with an arrow 
+
+24. תן דוגמא לשתי מחלקות אשר האחת מכילה את השנייה
+
+         Game 
+       
+       /\       /\
+       ||       ||
+  Designer    programmer 
+
+
+25. מהו IL ( MSIL ? )מדוע כדאי להכירו 
